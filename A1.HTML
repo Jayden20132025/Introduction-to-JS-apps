@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var choice = prompt(
+        "Welcome to Area Calculator. \n Please Eneter you choice. \n1.Area of Rectangle. /n2.Area of Triangle. \n3.Area of Circle. \n4.Area of Paralleologram"
+      );
+      if (choice == "1") {
+        var l = prompt("Eneter the length");
+        var b = prompt("Enter the breadth");
+        var result = Number(l) * Number(b);
+        alert("This Area is " + result);
+      }
+      if (choice == "2") {
+        var h = prompt("Eneter the height");
+        var b = prompt("Enter the base");
+        var result = (Number(h) * Number(b)) / 2;
+        alert("This Area is " + result);
+      }
+      if (choice == "3") {
+        var r = prompt("Eneter the radius");
+        var result = 3.14 * Number(r) * Number(r);
+        alert("This Area is " + result);
+      }
+      if (choice == "4") {
+        var h = prompt("Eneter the height");
+        var cb = prompt("Eneter the corresponding base");
+        var result = Number(h) * Number(cb);
+        alert("This Area is " + result);
+      }
+    </script>
+  </body>
+</html>
