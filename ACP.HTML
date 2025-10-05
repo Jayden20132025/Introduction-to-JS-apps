@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perimeter Calculator</title>
+  </head>
+  <body>
+    <script>
+      // Step 5: Prompt user for shape choice
+      let choice = prompt(
+        "Welcome to Perimeter Calculator.\nPlease Enter your Choice:\n" +
+          "1. Perimeter of Rectangle\n" +
+          "2. Perimeter of Triangle\n" +
+          "3. Perimeter of Circle\n" +
+          "4. Perimeter of Square"
+      );
+
+      let perimeter;
+
+      // Step 6 & 7: Get inputs, calculate, and display result
+      if (choice == "1") {
+        // Rectangle
+        let length = parseFloat(prompt("Enter the length of Rectangle"));
+        let width = parseFloat(prompt("Enter the width of Rectangle"));
+        perimeter = 2 * (length + width);
+        alert("The Perimeter of Rectangle is " + perimeter);
+      } else if (choice == "2") {
+        // Triangle
+        let a = parseFloat(prompt("Enter side a of Triangle"));
+        let b = parseFloat(prompt("Enter side b of Triangle"));
+        let c = parseFloat(prompt("Enter side c of Triangle"));
+        perimeter = a + b + c;
+        alert("The Perimeter of Triangle is " + perimeter);
+      } else if (choice == "3") {
+        // Circle
+        let radius = parseFloat(prompt("Enter the radius of Circle"));
+        perimeter = 2 * Math.PI * radius;
+        alert("The Perimeter of Circle is " + perimeter.toFixed(2));
+      } else if (choice == "4") {
+        // Square
+        let side = parseFloat(prompt("Enter the side of Square"));
+        perimeter = 4 * side;
+        alert("The Perimeter of Square is " + perimeter);
+      } else {
+        alert("Invalid choice! Please refresh and try again.");
+      }
+    </script>
+  </body>
+</html>
